@@ -1,0 +1,311 @@
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0 60px;
+    padding: 0;
+}
+
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.nav-bar > h1 {
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.9rem;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-links > button {
+    padding: 15px 25px;
+    background-color: rgb(43, 182, 78);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.menu-bar {
+    display: none;
+}
+
+/* Hero */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px;
+    height: 400px;
+    background-color: rgb(241, 241, 241);
+}
+
+.hero-section {
+    place-content: center;
+}
+
+.hero-section > h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.hero-section > h1 > span {
+    color: rgb(43, 182, 78);
+}
+
+.hero-section > p {
+    color: #7a7a7a;
+    font-size: 0.8rem;
+    margin-bottom: 35px;
+    margin-top: 10px;
+}
+
+.hero-section > button {
+    background-color: rgb(43, 182, 78);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+}
+
+header > img {
+    height: 100%;
+    width: 500px;
+}
+
+/* client section */
+section {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: #fff;
+    padding: 30px 0;
+}
+
+section > h1 {
+    color: #1d1d1d;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+section > p {
+    color: #7a7a7a;
+    font-size: 0.9rem;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    /* background-color: rebeccapurple; */
+}
+
+.logos > img {
+    width: 45px;
+    height: 40px;
+}
+
+/* community */
+.community-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px 15px;
+    margin-top: 20px;
+}
+
+.community-section > h1 {
+    text-align: center;
+    color: #1d1d1d;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.community-section > p {
+    text-align: center;
+    color: #7a7a7a;
+    margin-top: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.icons > div {
+    /* background-color: #ddd; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 280px;
+    width: 260px;
+    padding: 10px 25px;
+    box-shadow: 0 4px 2px rgba(34, 34, 34, 0.151);
+}
+
+.icons > div > img {
+    height: 60px;
+    width: 80px;
+}
+
+.icons > div > h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.icons > div > p {
+    font-size: 0.8rem;
+}
+
+/* --------------------------------------------------- */
+.learnMore-section {
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.learnMore-section > img {
+    height: 350px;
+    width: 350px;
+}
+
+.rightContent {
+    padding: 15px 40px;
+}
+
+.rightContent > h1 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.rightContent > p {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+.learnMore-btn {
+    background-color: rgb(43, 182, 78);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Responsive -------------------------------------*/
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-bar {
+        display: block;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: start;
+        height: 650px;
+    }
+
+    header > img {
+        height: 300px;
+        width: 300px;
+        margin-top: 10px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+    }
+
+    .logos > img{
+        height: 25px;
+        width: 25px;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .icons > div {
+        height: 200px;
+    }
+
+    .icons > div > h4 {
+        font-size: 1.2rem;
+    }
+
+    .icons > div > p {
+        font-size: 0.5rem;
+    }
+
+    .learnMore-section {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-bar > h1 {
+        font-size: 1rem;
+    }
+
+    .hero-section > h1 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-section > p {
+        font-size: 0.5rem;
+    }
+
+    .hero-section > button {
+        padding: 10px 20px;
+    }
+
+    header > img {
+        height: 200px;
+        width: 200px;
+        margin-top: 30px;
+    }
+
+    .community-section > h1 {
+        font-size: 1.5rem;
+    }
+
+    .community-section > p {
+        font-size: 0.7rem;
+    }
+}
