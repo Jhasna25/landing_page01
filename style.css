@@ -1,6 +1,6 @@
 body{
     font-family: "Poppins", sans-serif;
-    margin: 0 60px;
+    margin: 0 50px;
     padding: 0;
 }
 
@@ -279,6 +279,10 @@ section > p {
 }
 
 @media (max-width: 600px) {
+    body {
+        margin: 15px;
+    }
+
     .nav-bar > h1 {
         font-size: 1rem;
     }
@@ -307,5 +311,15 @@ section > p {
 
     .community-section > p {
         font-size: 0.7rem;
+    }
+    .rightContent {
+        padding: 5px 10px;
+    }
+    .rightContent > h1 {
+        font-size: 1rem;
+    }
+
+    .rightContent > p {
+        font-size: 0.5rem;
     }
 }
