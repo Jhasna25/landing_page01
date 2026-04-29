@@ -322,4 +322,9 @@ section > p {
     .rightContent > p {
         font-size: 0.5rem;
     }
+
+    .learnMore-section > img {
+        height: 200px;
+        width: 200px;
+    }
 }
