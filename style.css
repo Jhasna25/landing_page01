@@ -34,6 +34,11 @@ h1, p {
     color: #333;
 }
 
+.nav-links a:hover {
+    color: #7a7a7a;
+    text-decoration: underline;
+}
+
 .nav-links > button {
     padding: 15px 25px;
     background-color: rgb(43, 182, 78);
@@ -88,10 +93,16 @@ header {
     color: #fff;
     font-weight: 600;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
 .hero-section > button:hover {
     background-color: rgba(43, 182, 78, 0.932);
+}
+
+header > img {
+    max-width: 300px;
+    object-fit: cover;
 }
 
 
@@ -229,6 +240,7 @@ header {
     color: #fff;
     font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .learnMore-btn:hover {
@@ -309,7 +321,7 @@ header {
     gap: 20px;
 }
 
-.learnMore-section > img {
+.learnMore-section2 > img {
     width: 300px;
     object-fit: cover;
 }
